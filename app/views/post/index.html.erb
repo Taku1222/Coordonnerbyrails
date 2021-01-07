@@ -1,0 +1,15 @@
+<div class="main posts-index">
+  <div class="container">
+    <i class="fas fa-question question"></i>
+    <h3>投稿一覧</h3>
+    <% @posts.each do |post|%>
+      <div class="posts-index-item">
+        <%= link_to(post.item,"/post/#{post.id}") %>
+      </div>
+    <% end %>
+    <div class="post-btn">
+      <a href="/post/new">投稿</a>
+    </div>
+    <i class="fas fa-exclamation exclamation"></i>
+  </div>
+</div>

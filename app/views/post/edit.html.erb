@@ -1,0 +1,21 @@
+<div class="main posts-new">
+  <div class="container">
+    <h3>編集</h3>
+    <%= form_tag("/post/#{@post.id}/update",{multipart: true}) do %>
+    <div class="form">
+      <div class="form-body">
+        <p>アイテム名</p>
+        <input name="item" value="<%= @post.item %>">
+        <p>ブランド</p>
+        <input name="brand" value="<%= @post.brand %>">
+        <p>サイズ</p>
+        <input name="size" value="<%= @post.size %>">
+        <p>その他詳細</p>
+        <textarea name="content"><%= @post.content %></textarea>
+        <input name="image" type="file">
+        <input type="submit" value="保存">
+      </div>
+    </div>
+    <%end%>
+  </div>
+</div>

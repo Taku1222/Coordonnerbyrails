@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coordonner</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c020149fd8.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-logo">
+        <a href="/">Coordonner</a>
+      </div>
+      <ul class="header-menus">
+        <li><%=link_to("投稿する","/post/new")%></li>
+        <li><%=link_to("投稿一覧","/post/index")%></li>
+      </ul>
+    </header>
+
+    <% if flash[:notice] %>
+     <div class="flash">
+       <%= flash[:notice] %>
+     </div>
+   <% end %>
+    <%= yield %>
+  </body>
+</html>

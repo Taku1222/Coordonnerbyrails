@@ -1,0 +1,48 @@
+<div class="main posts-show">
+  <div class="show">
+    <div class="posts-show-item">
+
+      <div class="comments">
+        <h3>アイテム詳細</h3>
+        <div class="comment-item">
+          <p>アイテム:
+            <%= @post.item %></p>
+          <p>ブランド:
+            <%= @post.brand %></p>
+          <p>サイズ:
+            <%= @post.size %></p>
+          <p>その他:
+            <%= @post.content %></p>
+        </div>
+      </div>
+
+      <div class="post-img">
+        <h3>アイテム画像</h3>
+        <img src="<%= "/post_images/#{@post.img}"%>">
+        <div class="post-menus">
+          <%= link_to("編集", "/post/#{@post.id}/edit") %>
+          <%= link_to("削除", "/post/#{@post.id}/destroy", {method: "post"}) %>
+        </div>
+        <div class="post-time">
+          <%= @post.created_at %>
+        </div>
+      </div>
+
+      <div class="advices">
+        <h3>アドバイス</h3>
+        <div class="advice">
+          <% @post.comments.each do |comment| %>
+            <div class="comments-index-item">
+              <%= link_to(comment.comment,"/post/#{@post.id}/comment/#{comment.id}") %>
+            </div>
+          <% end %>
+          <div class="advice-btn">
+            <a href="/post/<%= @post.id %>/comment/new">コメント</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

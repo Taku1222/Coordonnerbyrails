@@ -1,0 +1,13 @@
+<div class="main comment-new">
+  <div class="container">
+    <i class="far fa-comments comment-icon"></i>
+    <h3>コメント</h3>
+
+    <%= form_tag("/post/#{@post.id}/comment/create") do %>
+    <div class="form">
+      <div class="form-body">
+        <textarea name="content"></textarea>
+        <input type="submit" value="投稿">
+      </div>
+    </div>
+  <% end %>

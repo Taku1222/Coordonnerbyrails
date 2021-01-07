@@ -1,0 +1,68 @@
+<div class="main picture">
+  <div class="container">
+
+    <div class="title"><h2>お悩み一覧</h2></div>
+
+    <% @posts.each do |post|%>
+      <div class="posts-index-item">
+        <%= link_to(post.content,"/post/#{post.id}") %>
+      </div>
+    <% end %>
+
+
+    <div class="contents-item">
+      <a href="/post/new">
+      <div class="item-left">
+        <img src="/jacket.jpg">
+      </div>
+      <div class="item-right">
+        <ul>
+          <li>アイテム:ジャケット</li>
+          <li>ブランド:××</li>
+          <li>サイズ:Lサイズ</li>
+        </ul>
+      </div>
+    </div>
+    </a>
+
+    <div class="contents-item">
+      <div class="item-left">
+        <img src="/pants.jpg">
+      </div>
+      <div class="item-right">
+        <ul>
+          <li>アイテム:パンツ</li>
+          <li>ブランド:△△</li>
+          <li>サイズ:Mサイズ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contents-item">
+      <div class="item-left">
+        <img src="/tshirt.jpg">
+      </div>
+      <div class="item-right">
+        <ul>
+          <li>アイテム:Tシャツ</li>
+          <li>ブランド:〇〇</li>
+          <li>サイズ:Sサイズ</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contents-item">
+      <div class="item-left">
+        <img src="/shoes.jpg">
+      </div>
+      <div class="item-right">
+        <ul>
+          <li>アイテム:スニーカー</li>
+          <li>ブランド:□□</li>
+          <li>サイズ:27cm</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
