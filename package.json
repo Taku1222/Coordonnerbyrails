@@ -3,3 +3,12 @@
   "private": true,
   "dependencies": {}
 }
+
+"scripts": {
+    "dev": "react-scripts start",
+    "heroku-postbuild": "npm run build",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },

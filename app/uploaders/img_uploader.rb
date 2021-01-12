@@ -45,6 +45,7 @@ class ImgUploader < CarrierWave::Uploader::Base
         name = time.strftime('%Y%m%d%H%M%S') + '.jpg'
         name.downcase
       end
+    end
   # Provide a default URL as a default if there hasn't been a file uploaded:
   # def default_url(*args)
   #   # For Rails 3.1+ asset pipeline compatibility:

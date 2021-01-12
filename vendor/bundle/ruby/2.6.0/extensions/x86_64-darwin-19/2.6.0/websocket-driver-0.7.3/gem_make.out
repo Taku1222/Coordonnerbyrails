@@ -1,0 +1,15 @@
+current directory: /Users/takumi/Desktop/rubby_lesson/coordonner/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+/Users/takumi/.rbenv/versions/2.6.6/bin/ruby -I /Users/takumi/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20210110-24415-18ydpa6.rb extconf.rb
+creating Makefile
+
+current directory: /Users/takumi/Desktop/rubby_lesson/coordonner/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/takumi/Desktop/rubby_lesson/coordonner/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/takumi/Desktop/rubby_lesson/coordonner/vendor/bundle/ruby/2.6.0/gems/websocket-driver-0.7.3/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20210110-24415-iz7obb
