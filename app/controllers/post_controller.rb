@@ -1,7 +1,7 @@
 class PostController < ApplicationController
 
   def index
-    @posts = Post.all.order(created_at: :desc)
+    @post = Post.all.order(created_at: :desc)
   end
 
   def picpost
