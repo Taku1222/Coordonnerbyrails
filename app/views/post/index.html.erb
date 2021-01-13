@@ -2,7 +2,7 @@
   <div class="container">
     <i class="fas fa-question question"></i>
     <h3>投稿一覧</h3>
-    <% @posts.each do |post|%>
+    <% @post.each do |post|%>
       <div class="posts-index-item">
         <%= link_to(post.item,"/post/#{post.id}") %>
       </div>
